@@ -19,3 +19,5 @@ with open(sys.argv[1], 'r') as file:
                     last_char = char
         concat_chars = first_char + last_char
         sum_of_calibrations += int(concat_chars)
+
+print(sum_of_calibrations)
