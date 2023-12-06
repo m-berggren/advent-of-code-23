@@ -19,7 +19,7 @@ with open(sys.argv[1], 'r') as file:
         first_char = ""
         last_char = ""
 
-        for num, transpose in enumerate(transpose_list):
+        for transpose in transpose_list:
             line = line.replace(transpose[0], transpose[1])
 
         for char in line:
