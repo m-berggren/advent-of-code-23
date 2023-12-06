@@ -1,6 +1,6 @@
 import sys
 
-transpose = [
+transpose_list = [
     ['one', 'one1one'],
     ['two', 'two2two'],
     ['three', 'three3three'],
@@ -19,8 +19,8 @@ with open(sys.argv[1], 'r') as file:
         first_char = ""
         last_char = ""
 
-        for num, string in enumerate(transpose):
-            line = line.replace(transpose[num][0], transpose[num][1])
+        for num, transpose in enumerate(transpose_list):
+            line = line.replace(transpose[0], transpose[1])
 
         for char in line:
             if char.isdigit():
